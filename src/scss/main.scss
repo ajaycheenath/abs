@@ -1,5 +1,28 @@
-$bdsColor: #bada51;
-body {
-  margin: 0;
-  background-color: $bdsColor;
+$primary-color: #333;
+.App {
+  body{
+    margin: 0;
+  }
+  h2{
+    margin: 0;
+    font-size: 1.5em;
+    padding: 20px;
+    font-weight: normal;
+  }
+  .mainContent {
+    float: left;
+    width: 100%;
+  }
+  .rightPanel{
+    float: right;
+    width: 200px;
+  }
+  .App-header {
+    background-color: $primary-color;
+    height: 60px;
+    color: white;
+  }
+  .App-intro {
+    font-size: large;
+  }
 }
