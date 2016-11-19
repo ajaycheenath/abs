@@ -1,28 +1,38 @@
 $primary-color: #333;
+$debug-border: 2px solid black;
 .App {
+  display: flex;
+  flex-flow: row wrap;
+
+  div{
+    border: $debug-border;
+  }
   body{
     margin: 0;
   }
   h2{
     margin: 0;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px;
     font-weight: normal;
   }
-  .mainContent {
-    float: left;
-    width: 100%;
+  .header{
+    flex: 1 100%;
+    justify-content: space-between;
+    background-color: $primary-color;
+    color: #ffffff;
+    &.menuItems{
+
+    }
   }
   .rightPanel{
     float: right;
     width: 200px;
   }
-  .App-header {
-    background-color: $primary-color;
-    height: 60px;
-    color: white;
-  }
-  .App-intro {
-    font-size: large;
+  .menu {
+    float: right;
+    &.item {
+      background-color: green;
+    }
   }
 }

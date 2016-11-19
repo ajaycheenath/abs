@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RightPanel from "./RightPanel"
+import RightPanel from "./RightPanel";
 
 class MainContent extends Component {
   render() {

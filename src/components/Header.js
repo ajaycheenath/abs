@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import Menu from "./Menu";
+
 
 class Header extends Component {
   render() {
     return (
-        <div className="App-header">
-          <h2>bestdoctorz.com</h2>
+        <div className="header">
+          <h2>product name</h2>
+          <Menu/>
         </div>
     );
   }
