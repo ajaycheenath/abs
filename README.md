@@ -5,3 +5,5 @@ Choosing a doctor is a tough decision. There are many parameters we look for whe
 The idea came in my mind when my friend was diagnosed with terminal cancer. I wanted to help him find a good trusted oncologist in my native. Then the question was, how can I find good oncologist in a specific area? I spent days scanning through dozens of doctor listing websites, but couldn't spot any website which can suggest a good oncologist doctor. Even today, searching for the best specialized doctors on major search engines doesn’t provide reliable answers. This was when I decided to start work on an application that can help patients to find best doctors.
 
 Today,bestdoctorz.com has got 80K+ registered doctors with hundreds of visits per day
+
+<font color="red">Please note: In middle of moving code from old source control to git. Expected to complete in a week or so..</font>
