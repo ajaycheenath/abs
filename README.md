@@ -6,4 +6,6 @@ The idea came in my mind when my friend was diagnosed with terminal cancer. I wa
 
 Today,bestdoctorz.com has got 80K+ registered doctors with hundreds of visits per day
 
-<font color="red">Please note: In middle of moving code from old source control to git. Expected to complete in a week or so..</font>
+```diff
+- Please note: We are in middle of moving code from old source control to git. Expected to complete in a week or so..
+```
