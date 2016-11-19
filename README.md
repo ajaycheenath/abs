@@ -24,3 +24,16 @@ When I started this project, I wanted spend more time on Idea than technology, b
 
 ### Contribution
 Any Contribution is highly appreciated. Let it be big or small, make change raise a pull request, thats all.. or feel free to reachout to me - contact@bestdoctorz.com
+
+
+
+Tasks           | Status
+-------------   | -------------
+Node Server     | Done
+ReactJS setup   | Done
+SCSS setup      | Done
+Unit Testing    | Not Started
+Code Coverage   | Not Started
+Relay setup     | Not Started
+GraphQL Server  | Not Started
+Common components | Not Started
