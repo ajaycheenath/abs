@@ -1,3 +1,6 @@
+```diff
+- Please note: I am in middle of moving code from old source control to git. Expected to complete in a week or so..
+```
 # bestdoctorz.com
 
 Choosing a doctor is a tough decision. There are many parameters we look for when we are in need of a good doctor, those includes, skill, experience, long-standing track record, ratings, review recommendations. bestdoctorz.com as the name suggests is a web application that suggest you the best doctors specific to patients needs.
@@ -6,6 +9,18 @@ The idea came in my mind when my friend was diagnosed with terminal cancer. I wa
 
 Today,bestdoctorz.com has got 80K+ registered doctors with hundreds of visits per day
 
-```diff
-- Please note: We are in middle of moving code from old source control to git. Expected to complete in a week or so..
-```
+
+### Tech Stack
+The current bestdoctorz.com is developed using JSP, Servlet, JavaScript, bootstrap, JQuery, NodeJS, Java, Spring MVC and dozen other technologies.
+
+### Deployment
+Deployed on AWS EC2 cloud and some parts are served from Red Hat Open Shift cloud server.
+
+### Whats bothering me right now?
+Deployment cost and development effort for Java based applications are pretty high. Thats why sometime back public facing functionalities I moved to JavaScript on NodeJS server. That model worked well and we do not need high end servers for deployment. The idea is to move everything into NodeJS in oder to reduce cost and  development effort.
+
+### Future plans
+When I started this project, I wanted spend more time on Idea than technology, but latter realized its equally important to have good design and technology backed-up to grow. bestdoctorz.com is currently undergoing a tech refresh to ReactJS, Relay and GraphQL backend running on Node Server.
+
+### Contribution
+Any Contribution is highly appreciated. Let it be big or small, make change raise a pull request, thats all.. or feel free to reachout to me - contact@bestdoctorz.com
