@@ -1,13 +1,15 @@
 $primary-color: #333;
-$debug-border: 2px solid black;
+$debug-border: 0px solid red;
+body{
+  height: 100%;
+  margin: 0
+}
 .App {
-  display: flex;
-  flex-flow: row wrap;
-
-  div{
+  height: calc(100vh - 100px);
+  div {
     border: $debug-border;
   }
-  body{
+  body {
     margin: 0;
   }
   h2{
@@ -16,23 +18,42 @@ $debug-border: 2px solid black;
     padding: 10px;
     font-weight: normal;
   }
+  .mainContent {
+    width: 100%;
+    height: 100%;
+  }
+  .productName {
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+  }
   .header{
     flex: 1 100%;
+    height: 50px;
     justify-content: space-between;
     background-color: $primary-color;
     color: #ffffff;
-    &.menuItems{
-
+    .menuItem {
+      font-size: 15px;
+      padding: 10px;
+    }
+    .menu {
+      display: inline-flex;
+      float: right;
+      &.item {
+        background-color: green;
+      }
     }
   }
-  .rightPanel{
+  .rightPanel {
     float: right;
-    width: 200px;
+    width: 250px;
+    height: 100%;
+    border-left: 1px solid #e1e1e1;
   }
-  .menu {
-    float: right;
-    &.item {
-      background-color: green;
-    }
+  .footer {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #e1e1e1;
   }
 }

@@ -13,6 +13,8 @@ Today,bestdoctorz.com has got 80K+ registered doctors with hundreds of visits pe
 ### Tech Stack
 The current bestdoctorz.com is developed using JSP, Servlet, JavaScript, bootstrap, JQuery, NodeJS, Java, Spring MVC and dozen other technologies.
 
+* You can see old stack checkin history  [here](http://bestdoctorz.com/version.txt)
+
 ### Deployment
 Deployed on AWS EC2 cloud and some parts are served from Red Hat Open Shift cloud server.
 
@@ -36,4 +38,12 @@ Unit Testing    | Not Started
 Code Coverage   | Not Started
 Relay setup     | Not Started
 GraphQL Server  | Not Started
+Bower setup     | Not Started
 Common components | Not Started
+Responsive/Adaptive Design | Not Started
+React Native App | Not Started
+
+### Running bestdoctoz.com locally
+
+* npm install
+* npm run devStart
