@@ -1,4 +1,6 @@
 $primary-color: #333;
+$secondory-color: #e1e1e1;
+$hover-color: yellow;
 $debug-border: 0px solid red;
 body{
   height: 100%;
@@ -33,27 +35,30 @@ body{
     justify-content: space-between;
     background-color: $primary-color;
     color: #ffffff;
-    .menuItem {
-      font-size: 15px;
-      padding: 10px;
-    }
     .menu {
       display: inline-flex;
       float: right;
-      &.item {
-        background-color: green;
+      .item {
+        font-size: 15px;
+        padding: 10px;
+        &:hover {
+          color: $hover-color;
+          cursor: pointer;
+        }
       }
+
     }
   }
   .rightPanel {
     float: right;
     width: 250px;
     height: 100%;
-    border-left: 1px solid #e1e1e1;
+    border-left: 1px solid $secondory-color;
   }
   .footer {
     width: 100%;
-    height: 40px;
-    border-top: 1px solid #e1e1e1;
+    border-top: 1px solid $secondory-color;
+    font-size: .8em;
+    color: #e1e1e1;
   }
 }

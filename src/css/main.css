@@ -26,14 +26,15 @@ body {
     justify-content: space-between;
     background-color: #333;
     color: #ffffff; }
-    .App .header .menuItem {
-      font-size: 15px;
-      padding: 10px; }
     .App .header .menu {
       display: inline-flex;
       float: right; }
-      .App .header .menu.item {
-        background-color: green; }
+      .App .header .menu .item {
+        font-size: 15px;
+        padding: 10px; }
+        .App .header .menu .item:hover {
+          color: yellow;
+          cursor: pointer; }
   .App .rightPanel {
     float: right;
     width: 250px;
@@ -41,5 +42,6 @@ body {
     border-left: 1px solid #e1e1e1; }
   .App .footer {
     width: 100%;
-    height: 40px;
-    border-top: 1px solid #e1e1e1; }
+    border-top: 1px solid #e1e1e1;
+    font-size: .8em;
+    color: #e1e1e1; }

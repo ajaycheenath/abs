@@ -4,8 +4,8 @@ class Menu extends Component {
   render() {
     return (
         <div className="menu">
-          <div className="menuItem">Home</div>
-          <div className="menuItem">Contact</div>
+          <div className="item">Home</div>
+          <div className="item">Contact</div>
         </div>
     );
   }
