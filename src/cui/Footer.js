@@ -3,7 +3,7 @@ class Footer extends Component {
   render() {
     return (
         <div className="footer">
-          &copy;All reserved
+          <div>&copy;all rights reserved</div>
         </div>
     );
   }
