@@ -60,16 +60,6 @@ body {
             .App .header .menu .item:hover {
               color: green;
               cursor: pointer; } }
-      .App .header .menu .hideMenu {
-        display: none !important; }
-        @media only screen and (min-width: 640px) {
-          .App .header .menu .hideMenu {
-            display: inline-flex !important; } }
-      .App .header .menu .showMenu {
-        display: block !important; }
-        @media only screen and (min-width: 640px) {
-          .App .header .menu .showMenu {
-            display: inline-flex !important; } }
     .App .header .mobileMenu {
       float: right;
       display: none; }
@@ -104,3 +94,13 @@ body {
     cursor: pointer; }
   .App .white {
     fill: #ffffff; }
+  .App .hideMenu {
+    display: none !important; }
+    @media only screen and (min-width: 640px) {
+      .App .hideMenu {
+        display: inline-flex !important; } }
+  .App .showMenu {
+    display: block !important; }
+    @media only screen and (min-width: 640px) {
+      .App .showMenu {
+        display: inline-flex !important; } }

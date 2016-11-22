@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ajaycheenath/abs.svg?branch=develop)](https://travis-ci.org/ajaycheenath/abs)
+
 # Awesome Bootstrap
 
 Awesome Bootstrap is one simple ReactJS starter KIT on NodeJS server.

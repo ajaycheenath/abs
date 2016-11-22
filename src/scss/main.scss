@@ -78,18 +78,7 @@ body{
           }
         }
       }
-      .hideMenu {
-        display: none !important;
-        @media only screen and (min-width: $mobile-size) {
-          display: inline-flex !important;
-        }
-      }
-      .showMenu {
-        display: block !important;
-        @media only screen and (min-width: $mobile-size) {
-          display: inline-flex !important;
-        }
-      }
+
     }
     .mobileMenu {
       float: right;
@@ -133,5 +122,16 @@ body{
   .white {
     fill: #ffffff;
   }
-
+  .hideMenu {
+    display: none !important;
+    @media only screen and (min-width: $mobile-size) {
+      display: inline-flex !important;
+    }
+  }
+  .showMenu {
+    display: block !important;
+    @media only screen and (min-width: $mobile-size) {
+      display: inline-flex !important;
+    }
+  }
 }
