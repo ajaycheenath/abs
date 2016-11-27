@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Menu from "./Menu";
+import headerStyle from "../App.css";
 
 
 class Header extends Component {
-
   render() {
     return (
-        <div className="header">
-          <div className="productName">product name</div>
+        <div className={headerStyle.header}>
+          <div className={headerStyle.productName}>product name</div>
           <Menu/>
         </div>
     );

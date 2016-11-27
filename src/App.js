@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
-import './css/main.css';
-import Header from "./cui/Header"
-import Footer from "./cui/Footer"
-import MainContent from "./components/MainContent"
+import React from 'react';
+import styles from './App.css';
 
-class App extends Component {
-
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {test: 'foo'};
+  }
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <MainContent/>
-        <Footer/>
+      <div className={styles.app}>
+        bar
       </div>
     );
   }
 }
-export default App;
