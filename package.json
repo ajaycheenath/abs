@@ -29,7 +29,8 @@
     "jscs": "jscs .",
     "build-css": "node-sass  --include-path scss src/scss/main.scss   src/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "devStart": "npm run watch-css & npm run start"
+    "devStart": "npm run watch-css & npm run start",
+    "postinstall": "node src/deploy"
   },
   "dependencies": {
     "babel-cli": "^6.4.0",
