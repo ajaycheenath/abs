@@ -16,13 +16,11 @@ class Menu extends Component {
           <div className={menuStyle.mobileMenu}>
             <Icon styleClass={menuStyle.icon} name="menu" onClick={this.handleClick}/>
           </div>
-          <div className={menuStyle.menu}>
-            <div className={this.state.show ? menuStyle.showMenu : menuStyle.hideMenu }>
+            <div className={this.state.show ? (menuStyle.menu + " " +menuStyle.showMenu) : (menuStyle.menu +" " +menuStyle.hideMenu) }>
               <MenuItem name="Home"/>
               <MenuItem name="Contact"/>
               <MenuItem name="Login"/>
             </div>
-          </div>
         </div>
     );
   }
