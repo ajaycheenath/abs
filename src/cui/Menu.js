@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MenuItem from "./MenuItem";
 import Icon from "./Icon";
+import menuStyle from "../css/menu.css";
 class Menu extends Component {
   componentWillMount() {
     this.setState({show: false});
@@ -12,13 +13,15 @@ class Menu extends Component {
   render() {
     return (
         <div>
-          <div className="mobileMenu">
-            <Icon styleClass="icon" name="menu" onClick={this.handleClick}/>
+          <div className={menuStyle.mobileMenu}>
+            <Icon styleClass={menuStyle.icon} name="menu" onClick={this.handleClick}/>
           </div>
-          <div className={this.state.show ? "menu showMenu" : "menu hideMenu"}>
-            <MenuItem name="Home"/>
-            <MenuItem name="Contact"/>
-            <MenuItem name="Login"/>
+          <div className={menuStyle.menu}>
+            <div className={this.state.show ? menuStyle.showMenu : menuStyle.hideMenu }>
+              <MenuItem name="Home"/>
+              <MenuItem name="Contact"/>
+              <MenuItem name="Login"/>
+            </div>
           </div>
         </div>
     );

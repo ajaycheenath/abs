@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Menu from "./Menu";
-import headerStyle from "../App.css";
+import headerStyle from "../css/app.css";
 
 
 class Header extends Component {

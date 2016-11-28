@@ -9,7 +9,7 @@ class Icon extends Component {
     return (
       <div onClick={this.handleClick}>
         <svg className={this.props.styleClass}>
-          <use xlinkHref={"sprite.svg#"+this.props.name}></use>
+          <use xlinkHref={"./sprite.svg#"+this.props.name}></use>
         </svg>
       </div>
     );
