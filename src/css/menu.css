@@ -56,7 +56,7 @@
 .hideMenu {
   display: none !important;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   .hideMenu {
     display: inline-flex !important;
   }
@@ -64,7 +64,7 @@
 .showMenu {
   display: block !important;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   .showMenu {
       display: inline-flex !important;
   }
