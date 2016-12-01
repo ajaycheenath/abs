@@ -49,14 +49,14 @@ I could have done this before….
 
 #### Everything look so cool from outside (2016)
 
-With AWS and NodeJS serving details everything looked great on broadband connection. But when I looked into Google Analytics, most of bestdoctorz.com users are low end mobile phone users with poor data connection.
+With AWS and NodeJS serving details everything looked great on broadband connection. But when I looked into Google Analytics, most of bestdoctorz.com users were low end mobile phone users with poor data connection.
 
 I checked how bad my site render on mobile.. oh no.. pathetic
 
-Have a look [here](https://www.bestdoctorz.com)
+Have a look [here](http://www.bestdoctorz.com)
 
 
-#### How to tackle Mobile issues?
+#### How to tackle Mobile rendering issues?
 
 1. Mobile first design - in this era first design your product for Mobile users and then tablet and then only desktop/laptop. - Website needs to be responsive (no compromise), load everything asynchronous if possible! (at least the landing page)
 
