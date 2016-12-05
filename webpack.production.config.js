@@ -12,17 +12,17 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, '/dist/'),
-    filename: '[name]-[hash].min.js',
+    filename: 'main.js',
     publicPath: '/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'src/index.tpl.html',
-      inject: 'body',
-      filename: 'index.html'
-    }),
-    new ExtractTextPlugin('[name]-[hash].min.css'),
+    // new HtmlWebpackPlugin({
+    //   template: 'src/index.tpl.html',
+    //   inject: 'body',
+    //   filename: 'index.html'
+    // }),
+    new ExtractTextPlugin('main.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false,

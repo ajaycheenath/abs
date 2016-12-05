@@ -6,8 +6,17 @@
     <title>react-kickstart</title>
     <meta name="description" content="just another react + webpack boilerplate">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/main-fb49fd43d75e21a929fa.min.css" rel="stylesheet"></head>
+  <link href="/main.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'"></head>
   <body>
     <div id="root"></div>
-  <script src="/main-fb49fd43d75e21a929fa.min.js"></script></body>
+    <script type="text/javascript">
+      (function() {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = './main.js';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+      })();
+  </script>
 </html>
