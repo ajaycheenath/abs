@@ -17,11 +17,11 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'src/index.tpl.html',
-      inject: 'body',
-      filename: 'index.html'
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: 'src/index.tpl.html',
+    //   inject: 'body',
+    //   filename: 'index.html'
+    // }),
     new ExtractTextPlugin('main.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
