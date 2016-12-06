@@ -1,22 +1,46 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>react-kickstart</title>
-    <meta name="description" content="just another react + webpack boilerplate">
+    <title>Awesome Web Bootstrap Kit</title>
+    <meta name="description" content="Awesome Web Bootstrap Kit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/main.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'"></head>
-  <body onload="lazyLoadScript('./main.js');">
-    <div id="root"></div>
+  <link href="/main.css">
+  <script src="./main.js" type="text/javascript" async=""></script></head>
+  <body>
+    <div>
+      <div class="app" data-reactid=".0">
+        <div class="header" data-reactid=".0.0">
+          <div class="app" data-reactid=".0.0.0">product name</div>
+          <div data-reactid=".0.0.1">
+            <div class="menu---mobileMenu---2KlQa" data-reactid=".0.0.1.0">
+              <div data-reactid=".0.0.1.0.0"><svg class="menu---icon---y3CQs" data-reactid=".0.0.1.0.0.0">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./sprite.svg#menu" data-reactid=".0.0.1.0.0.0.0"></use></svg>
+              </div>
+            </div>
+            <div class="menu---menu---3MDEi menu---hideMenu---1bBNi" data-reactid=".0.0.1.1">
+              <div class="menu---item---apZoo" data-reactid=".0.0.1.1.0">Home</div>
+              <div class="menu---item---apZoo" data-reactid=".0.0.1.1.1">Contact</div>
+              <div class="menu---item---apZoo" data-reactid=".0.0.1.1.2">Login</div></div>
+            </div>
+          </div>
+          <div class="mainContent---mainContent---2phX4" data-reactid=".0.1">
+            <span data-reactid=".0.1.0">Main Content</span>
+            <div class="rightPanel---rightPanel---2fMIU" data-reactid=".0.1.1">Right Panel..</div>
+          </div>
+          <div class="footer---footer---1tEuV" data-reactid=".0.2">
+            <div data-reactid=".0.2.0">©all rights reserved</div>
+          </div>
+          </div>
+        </div>
     <script type="text/javascript">
-      function lazyLoadScript(_script) {
-        var scriptTag = document.createElement('script');
-        scriptTag.src = _script; // set the src attribute
-        scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
-        scriptTag.async = true; // the HTML5 async attribute
-        var headTag = document.getElementsByTagName('head')[0];
-        headTag.appendChild(scriptTag);
-      }
+        setTimeout(function() {
+          var scriptTag = document.createElement('script');
+          scriptTag.src = "./main.js"; // set the src attribute
+          scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
+          scriptTag.async = true; // the HTML5 async attribute
+          var headTag = document.getElementsByTagName('head')[0];
+          headTag.appendChild(scriptTag);
+        }, 0);
     </script>
-</html>
+
+</body></html>

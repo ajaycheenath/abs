@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.js';
+import MainContent from './components/MainContent.js';
+import RightPanel from './components/RightPanel.js';
+import FooterPanel from './components/FooterPanel.js';
+import Menu from './cui/Menu.js';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Menu />, document.getElementById('menu'));
+ReactDOM.render(<MainContent />, document.getElementById('mainPanel'));
+ReactDOM.render(<RightPanel />, document.getElementById('rightPanel'));
+ReactDOM.render(<FooterPanel />, document.getElementById('footerPanel'));
