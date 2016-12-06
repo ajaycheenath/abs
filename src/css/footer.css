@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  font-size: .8em;
+  color: #e1e1e1;
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}

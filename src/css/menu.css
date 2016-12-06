@@ -1,0 +1,78 @@
+.menu {
+  display: inline-flex;
+  float: right;
+}
+@media only screen and (max-width: 640px) {
+  .menu {
+      display: none;
+      width: 100%;
+      z-index: 100;
+      position: fixed;
+      float: left;
+      top: 50px;
+      left: 0;
+      background: #e1e1e1;
+      height: 100vh;
+  }
+}
+.show {
+  display: inline-block;
+}
+.item {
+  font-size: 15px;
+  padding: 10px;
+  display: block;
+}
+.item:hover {
+  color: yellow;
+  cursor: pointer;
+}
+@media only screen and (max-width: 640px) {
+   .item {
+    width: 100%;
+    float: left;
+    border-bottom: 1px dotted #333;
+    color: #333;
+    padding: 20px;
+    height: 30px;
+    font-size: 20px;
+  }
+    .item:hover {
+      color: green;
+      cursor: pointer;
+    }
+}
+.mobileMenu {
+  float: right;
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  .mobileMenu {
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.hideMenu {
+  display: none !important;
+}
+@media only screen and (min-width: 641px) {
+  .hideMenu {
+    display: inline-flex !important;
+  }
+}
+.showMenu {
+  display: block !important;
+}
+@media only screen and (min-width: 641px) {
+  .showMenu {
+      display: inline-flex !important;
+  }
+}
+
+.icon {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}

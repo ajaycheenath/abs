@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import rightStyle from "../css/rightPanel.css";
+import rightStyle from "../css/footer.css";
 
-class RightPanel extends Component {
+class FooterPanel extends Component {
   render() {
     return (
         <div className={rightStyle.rightPanel}>
-          -Right Panel..
+          ©all rights reserved
         </div>
     );
   }
 }
 
-export default RightPanel;
+export default FooterPanel;

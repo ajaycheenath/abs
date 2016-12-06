@@ -1,13 +1,91 @@
-<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>react-kickstart</title>
-    <meta name="description" content="just another react + webpack boilerplate">
+    <title>Awesome Web Bootstrap Kit</title>
+    <meta name="description" content="Awesome Web Bootstrap Kit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+  <style>
+    body{
+      margin: 0;
+    }
+    .app {
+      height: calc(100vh - 100px);
+    }
+    .productName {
+      float: left;
+      font-size: 20px;
+      padding: 10px;
+    }
+    .header {
+      height: 50px;
+      justify-content: space-between;
+      background-color: #333;
+      color: #ffffff;
+    }
+    .menu {
+      display: inline-flex;
+      float: right;
+    }
+    .mainContent {
+      width: 100%;
+      height: 100%;
+    }
+    .rightPanel {
+      float: right;
+      width: 250px;
+      height: 100%;
+      border-left: 1px solid #e1e1e1;
+    }
+    .mainPanel {
+      float: left;
+    }
+    .footerPanel {
+      width: 100%;
+      border-top: 1px solid #e1e1e1;
+      font-size: .8em;
+      color: #e1e1e1;
+    }
+    @media only screen and (max-width: 768px) {
+      .rightPanel {
+        display: none;
+      }
+      .footerPanel {
+        display: none;
+      }
+    }
+  </style>
+</head>
   <body>
-    <div id="root"></div>
-  </body>
-</html>
+    <div id="root">
+      <div class="app">
+        <div class="header" >
+          <div class="productName">product name</div>
+          <div id="menu" class="menu">menu goes here..</div>
+        </div>
+        <div class="mainContent">
+          <div id="mainPanel" class="mainPanel"></div>
+          <div id="rightPanel" class="rightPanel"></div>
+        </div>
+        <div id="footerPanel" class="footerPanel"></div>
+      </div>
+    <script type="text/javascript">
+        setTimeout(function() {
+          var scriptTag = document.createElement('script');
+          scriptTag.src = "./main.js"; // set the src attribute
+          scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
+          scriptTag.async = true; // the HTML5 async attribute
+          var headTag = document.getElementsByTagName('head')[0];
+          headTag.appendChild(scriptTag);
+        }, 0);
+
+        setTimeout(function() {
+          var head = document.getElementsByTagName("head")[0]
+          var link = document.createElement("link")
+          link.href = "./main.css";
+          link.type = "text/css"
+          link.rel = "stylesheet"
+          head.appendChild(link)
+      }, 0);
+    </script>
+</body></html>
