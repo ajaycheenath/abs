@@ -11,7 +11,7 @@ The first version of bestdoctorz.com was built using technologies like Java, Spr
 
 Idea wise it was a big hit, but as expected technically it was disaster.
 
-Below are some reasons why it was a failure
+Below are few reasons why it was a failure
 
 1. Heavy Java + tomcat server app, deployed first on RedHat OpenShift free cloud server.  Oh yea, that was one suicidal attempt
 2. No SPA (single page architecture). Every time page needs a reload (Issue with JSP page / Servlet) – poor customers!
@@ -22,7 +22,7 @@ Learning - For any web startup the secret mantra would be – spend most of your
 #### Version 0.2 (2015)
 
 There was a long product idea laundry list, and the technology was slowing down everything.
-The product code base was becoming a monolith and messy, even for a small change, it was taking hell lot of time.
+The product code base was becoming a monolith and messy, even for a small change, it was taking a lot time.
 
 Re-writing everything to new tech stack? huh almost impossible as so much functionality & code already in place
 
@@ -46,11 +46,11 @@ I could have done this before….
 
 
 #### Version 0.4 - From OpenShit --> Heroku --> AWS
-If you are serious about your idea, opt for a reliable, scalable, available cloud deployment service. I used OpenShit and the Heroku free service to begin with. But how much ever you optimize, as your app grows free servers will start crying.
-Remember - if your site traffic is coming (99% thats the case) from search engines, make sure your web app is up and running all the time. "If your server is down the time google trying to index your files, trust me google will belt you in search ranking - and consider you lost 6 months of your hard work"
-That is when I moved my app to AWS. Thumps up, I dont think I had to restarted my server. (100% availability)
+If you are serious about your idea, opt for a reliable, scalable, available cloud deployment service. I used OpenShit and then Heroku free service to begin with. But how much ever you optimize, as your app grows free servers will start crying.
+Remember - if your site traffic is coming (99% thats the usual case) from search engines, make sure your web app is up and running all the time. "If your server is down the time google trying to index your files, trust me google will belt you in search ranking - and consider you lost 6 months of your hard work"
+That is when I moved my app to AWS. Thumps up, I dont think I had to restart my tomcat server in sometime. (100% availability)
 
-hmm performance improved so much, but ~$60 per month for deployment. Isn't that too much.. (TODO)
+hmm performance improved so much, but ~$60 per month for deployment. Isn't that too much.. (TODO How to reduce deployment cost?)
 
 #### Everything look so cool from outside (2016)
 
@@ -72,7 +72,7 @@ Almost ~7 seconds page was just blank, and thats enough for any user to get frus
 
 2. Think twice before using frameworks - why ? if you want to use boostrap, you got a dependency on JQuery. So both these js files need to load on user brower. Think on mobile every byte counts!   
 
-3. Load everything asynchronous if possible! (at least the landing page). As I mentioned earlier, users tend to exit from a webpage if the initial page load time is > few second (idelly 2 seconds on low end mobile phones, yea I know 2 secs load time requires a lots of engineering and infrastructure)
+3. Load everything asynchronous if possible! (at least the landing page). As I mentioned earlier, users tend to exit from a webpage if the initial page load time is > few seconds (ideally 2 seconds on low end mobile phones, yea I know 2 secs load time requires a lots of engineering and infrastructure)
 
 #### Version 0.5 - Dynamically render content using JavaScript.
 
@@ -104,12 +104,12 @@ Drawback - Wow ReactJS reduced the page loading time almost half thats around 3.
 
 #### Version 0.7 - Load landing page as fast as possible.
 
-When we bundle all JS resources as one JS bundle, the bundle was getting bigger and bigger in size, as and when we add new features. And if that bundle is also responsible for rendering initial screen, the page load time will be depending on the size of your bundle size.
+When we bundle all JS resources as one JS bundle, the bundle was getting bigger and bigger in size, and then when we add new features size also will be keep increasing. And if that bundle is also responsible for rendering initial screen, the page load time will be depending on the size of your bundle size.
 
 But this issue is only for the first time page loading, afterwards rendering will be super fast.
 
 ###### Is this okay?
-Usually this is not a big issue for "returning" users, as they already aware of the website and okay to wait till the page loads, also decent change resources are already cached in their browers and loading files again may not be required.
+Usually this is not a big issue for "returning" users, as they already aware of the your website and okay to wait till the page loads, also decent chance resources might have already cached in their browers and loading files again may not be required.
 
 But this is BIG BIG problem when a new user land on your website, and wait long time for seeing the landing page. Trust me, users get pissed off for this..
 
@@ -124,7 +124,7 @@ Have a look [here](http://bestdoctorz.com:8082/) , I am sure you will love it!
 Check page loading time when accessed in 2G 150kb/s  
 ![Alt text](/react_async.png?raw=true "Title")
 
-It takes less 2 seconds to load initial page, yea you guessed it right, the content loading time depend on the size of the bundle / features and that can take its own sweet time
+It takes less than 2 seconds to load initial page, yea you guessed it right, the content loading time depend on the size of the bundle / features which is loaded asynchronously and that can take its own sweet time
 
 #### SASS VS CSS modules
 TODO
