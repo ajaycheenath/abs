@@ -4,8 +4,6 @@
 ## bestdoctorz.com
 The idea came in my mind when my friend was diagnosed with terminal cancer. I spent days scanning through dozens of doctor listing websites, but couldn't spot any website which can suggest a good oncologist doctor. Even today, searching for the best specialized doctors on major search engines doesn’t provide reliable answers. This was when I decided to start work on an application that can help patients to find best doctors.
 
-
-
 #### Version 0.1 (2014)
 
 When I started bestdoctorz.com, the mindset was to concentrate more on idea than the technology to solve it.
@@ -72,11 +70,64 @@ Almost ~7 seconds page was just blank, and thats enough for any user to get frus
 
 1. Mobile first design - in this era first design your product for Mobile users and then tablet and then only desktop/laptop. - Website needs to be responsive (no compromise)
 
-2. Think twice before using frameworks - why ? if you want to use boostrap, you got a dependency on JQuery. So that means you need to load both these frameworks to on your user brower. Think on mobile every penny counts!   
+2. Think twice before using frameworks - why ? if you want to use boostrap, you got a dependency on JQuery. So both these js files need to load on user brower. Think on mobile every byte counts!   
 
+3. Load everything asynchronous if possible! (at least the landing page). As I mentioned earlier, users tend to exit from a webpage if the initial page load time is > few second (idelly 2 seconds on low end mobile phones, yea I know 2 secs load time requires a lots of engineering and infrastructure)
 
+#### Version 0.5 - Dynamically render content using JavaScript.
 
-, load everything asynchronous if possible! (at least the landing page)
+That is one great idea. And avoid heavy frameworks whenever possible and write your own light weight javascript.
+
+Drawback - It does the job, but when you write your own framework, if you don't design it well(AMD modular - re-usable, MVC patterns etc), there is a decent chance at some point your code can look really messy, and nightmare to maintain
+
+Have a look at bestdoctorz.com custom JS file [here](http://bestdoctorz.com/js/util.mini.js)  
+
+#### Version 0.6 - React JS, Relay and GraphQL
+
+###### Why React JS?
+
+TODO - React JS can solve most the problems mentioned above. It is also "Declarative", "Component-Based", "Learn Once, Write Anywhere", "Virtual DOM to improve performance" and so on.
+
+https://facebook.github.io/react/
+
+###### Why Relay?
+TODO - Relay - Is an awesome UI cache layer for reactjs. Does help in making graphql backend calls, cache data on the UI layer and improve performance by not making backend call if the required data is already available on UI cache layer.   
+
+https://facebook.github.io/relay/
+
+###### Why GraphQL?
+TODO - A single end point which can serve different clients (Web, Mobile, App etc), as per their data requirement. Provide exactly what is required - Nothing less & Nothing more.
+
+https://github.com/facebook/graphql
+
+Drawback - Wow ReactJS reduced the page loading time almost half thats around 3.5 seconds. Also development & maintaince became more fun and super easy. But that still not meeting our < 2seonds initial page load time target? What could be wrong?
+
+#### Version 0.7 - Load landing page as fast as possible.
+
+When we bundle all JS resources as one JS bundle, the bundle was getting bigger and bigger in size, as and when we add new features. And if that bundle is also responsible for rendering initial screen, the page load time will be depending on the size of your bundle size.
+
+But this issue is only for the first time page loading, afterwards rendering will be super fast.
+
+###### Is this okay?
+Usually this is not a big issue for "returning" users, as they already aware of the website and okay to wait till the page loads, also decent change resources are already cached in their browers and loading files again may not be required.
+
+But this is BIG BIG problem when a new user land on your website, and wait long time for seeing the landing page. Trust me, users get pissed off for this..
+
+###### Possible solution?
+
+How about the landing page is designed very light weight, and all other resources are asynchronously loaded after displaying the landing page? So that user will get to see landing page within 2 seconds which gives a feeling that the site is super fast, and engage the user while we are loading other resources ?
+
+Wow thats an awesome idea.
+
+Have a look [here](http://bestdoctorz.com:8082/) , I am sure you will love it!
+
+Check page loading time when accessed in 2G 150kb/s  
+![Alt text](/react_async.png?raw=true "Title")
+
+It takes less 2 seconds to load initial page, yea you guessed it right, the content loading time depend on the size of the bundle / features and that can take its own sweet time
+
+#### SASS VS CSS modules
+TODO
 
 ### Modules available
 
@@ -88,7 +139,7 @@ Almost ~7 seconds page was just blank, and thats enough for any user to get frus
 * ~~Jquery~~
 * Babel (ES6 to ES5 transpilar)
 * eslint (write code right)
-* MySQL
+* ~~MySQL~~
 * ~~SASS~~
 * CSS Module
 * Webpack
