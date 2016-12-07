@@ -3,6 +3,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -16,11 +17,11 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'src/index.tpl.html',
-      inject: 'body',
-      filename: 'index.html'
-    }),
+    new CopyWebpackPlugin([
+            { from: 'src/index.html', to: 'index.html' },
+            { from: 'src/sprite.svg', to: 'sprite.svg' },
+            { from: 'src/favicon.ico', to: 'favicon.ico' }
+          ]),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
