@@ -5,6 +5,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var StatsPlugin = require('stats-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -17,11 +18,11 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: 'src/index.tpl.html',
-    //   inject: 'body',
-    //   filename: 'index.html'
-    // }),
+    new CopyWebpackPlugin([
+            { from: 'src/index.html', to: 'index.html' },
+            { from: 'src/sprite.svg', to: 'sprite.svg' },
+            { from: 'src/favicon.ico', to: 'favicon.ico' }
+          ]),
     new ExtractTextPlugin('main.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './css/main.css';
-import Header from "./cui/Header"
-import Footer from "./cui/Footer"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 import MainContent from "./components/MainContent"
-import Menu from "./cui/Menu";
-import Icon from "./cui/Icon";
+import Menu from "./components/Menu";
+import Icon from "./components/Icon";
 import appStyle from "./css/app.css";
 
 class App extends Component {
