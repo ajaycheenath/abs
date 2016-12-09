@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MenuItem from "./MenuItem";
-import Icon from "./Icon";
+import Icon from "../uic/Icon";
 import menuStyle from "../css/menu.css";
 class Menu extends Component {
   componentWillMount() {

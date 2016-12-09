@@ -11,6 +11,7 @@ class Icon extends Component {
         <svg className={this.props.styleClass}>
           <use xlinkHref={"./sprite.svg#"+this.props.name}></use>
         </svg>
+        {this.props.text}
       </div>
     );
   }
