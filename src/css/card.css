@@ -3,17 +3,10 @@
 }
 .card {
   width: 31%;
-  min-width: 350px;
+  min-width: 300px;
   margin: 10px;
   float: left;
   border-radius: 10px;
-}
-@media only screen and (max-width: 875px) {
-  .card {
-    width: auto;
-    margin: 10px;
-    float: none;
-  }
 }
 .head {
   min-height: 75px;
@@ -25,12 +18,30 @@
   border: 1px solid #e3e3e3;
 }
 .footer {
-  min-height: 25px;
+  min-height: 20px;
   padding-bottom: 13px;
   position: relative;
   background: #f9f9f9;
   border: 1px solid #e3e3e3;
 }
+@media only screen and (max-width: 1045px) {
+  .card {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .card {
+    width: 100%;
+    margin:0;
+    border-bottom: 5px solid #e1e1e1;
+    border-radius: 0;
+  }
+  .head {
+    border-radius: 0;
+  }
+}
+
+
 .content {
   height: 150px;
   position: relative;
@@ -70,9 +81,7 @@
   margin-right: auto;
 }
 .control {
-  width: auto;
-  padding: 10px;
-  height: 18px;
+  padding: 5px;
   float: left;
   color: #83b241;
 }

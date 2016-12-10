@@ -1,13 +1,19 @@
 .container {
-    width: 94%;
-    padding: 20px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 92%;
+  max-width: 1500px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
 }
 @media only screen and (max-width: 768px) {
   .container {
+    float: left;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    position: relative;
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
