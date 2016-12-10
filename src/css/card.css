@@ -29,19 +29,10 @@
     width: 46%;
   }
 }
-@media only screen and (max-width: 640px) {
-  .card {
-    width: 100%;
-    margin:0;
-    border-bottom: 5px solid #e1e1e1;
-    border-radius: 0;
-  }
-  .head {
-    border-radius: 0;
-  }
+.doctorDetails{
+  width: 80%;
+  display: table;
 }
-
-
 .content {
   height: 150px;
   position: relative;
@@ -68,12 +59,14 @@
   height: 25px;
   font-weight: bold;
   overflow: hidden;
+  display: table-row;
 }
 .speciality{
   color: brown;
   float: left;
   width: 100px;
-  clear: right;
+  display: table-row;
+  clear: both;
 }
 .controlBox {
   width: 320px;
@@ -93,4 +86,21 @@
 .rating {
   width: 200px;
   float: left;
+  clear: both;
+  display: table-row;
+}
+
+@media only screen and (max-width: 640px) {
+  .card {
+    width: 100%;
+    margin:0;
+    border-bottom: 5px solid #e1e1e1;
+    border-radius: 0;
+  }
+  .head {
+    border-radius: 0;
+  }
+  .footer {
+    display: none;
+  }
 }
