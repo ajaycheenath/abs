@@ -8,7 +8,7 @@ class Header extends Component {
     return (
         <div className={headerStyle.header}>
           <div className={headerStyle.productName}>product name</div>
-          <Menu/>
+          <Menu search={this.props.search}/>
         </div>
     );
   }

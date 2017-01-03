@@ -1,0 +1,14 @@
+[
+  {
+    "country" : "India",
+    "states" : [{
+        "state": "Kerala",
+        "cities": [
+          {
+            "city": "Bangalore",
+            "specialities": ["Pediatritian", "ENT"]
+          }
+        ]
+      }]
+  }
+]
