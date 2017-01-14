@@ -1,6 +1,10 @@
 .menu {
   display: inline-flex;
   float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #ffffff;
 }
 @media only screen and (max-width: 640px) {
   .menu {
@@ -44,11 +48,16 @@
 .mobileMenu {
   float: right;
   display: none;
+  z-index: 101;
+  top: 0;
+  right: 0;
 }
 @media only screen and (max-width: 640px) {
   .mobileMenu {
     cursor: pointer;
     display: block;
+    position: fixed;
+    fill: white;
   }
 }
 

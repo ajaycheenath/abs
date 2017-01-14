@@ -4,10 +4,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Awesome Web Bootstrap Kit</title>
     <meta name="description" content="Awesome Web Bootstrap Kit">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body{
+      font-family: Verdana, Geneva, sans-serif;
       margin: 0;
+      font-size:
     }
     .app {
       height: calc(100vh - 100px);
@@ -39,12 +41,20 @@
     }
     .mainPanel {
       float: left;
+      width: 100%;
+      height: 100%;
     }
     .footerPanel {
       width: 100%;
       border-top: 1px solid #e1e1e1;
       font-size: .8em;
       color: #e1e1e1;
+    }
+    .floatLeft {
+      float: left;
+    }
+    .floatRight {
+      float: right;
     }
     @media only screen and (max-width: 768px) {
       .rightPanel {
@@ -60,14 +70,11 @@
     <div id="root">
       <div class="app">
         <div class="header" >
-          <div class="productName">product name</div>
+          <div class="productName">Best Doctorz</div>
           <div id="menu" class="menu"></div>
         </div>
-        <div class="mainContent">
-          <div id="mainPanel" class="mainPanel"></div>
-          <div id="rightPanel" class="rightPanel"></div>
+        <div class="mainContent" id="mainPanel">
         </div>
-        <div id="footerPanel" class="footerPanel"></div>
       </div>
     <script type="text/javascript">
         setTimeout(function() {

@@ -7,7 +7,7 @@ class Head extends Component {
   render() {
     return (
         <div className={cardStyle.head}>
-          <ProfilePicture picture={this.props.picture}/>
+          {<ProfilePicture picture={this.props.picture ? "http://bestdoctorz.com:8080/api/getsmallphoto/"+this.props.picture : null}/>}
           <div className={cardStyle.doctorDetails}>
             <div className={cardStyle.doctorName} >{this.props.name}</div>
             <div className={cardStyle.speciality} >{this.props.speciality}</div>

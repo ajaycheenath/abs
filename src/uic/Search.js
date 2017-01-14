@@ -4,55 +4,49 @@ import SearchOptions from "./SearchOptions";
 import Head from "./Head";
 import CardContent from "../uic/CardContent";
 import Card from "./Card";
+import { connect } from "react-redux";
+import { fetchDoctors } from "../actions/doctorActions";
+
+
+function mapStateToProps(state) {
+  console.log(">?>>", state.doctors.doctors);
+  return {doctors: state.doctors.doctors};
+}
 class Search extends Component {
   componentWillMount () {
+    this.props.dispatch(fetchDoctors());
     this.setState({showSearch: false});
   }
   showSearchOptions = () => {
     this.setState({showSearch: true});
   }
   search (filter) {
-    const getURL = "http://bestdoctorz.com:8080/api/doctor/search?city="+filter.cityName+"&specialization="+filter.speciality;
-    debugger;
-    fetch(getURL, {
-    method: 'GET',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-    }
-})
+
+  }
+  showCard (doctor, key) {
+    return (
+      <Card key={key}>
+          <Head name={doctor.DOCTORNAME}
+            speciality={doctor.SPECIALIZATION}
+            RATING={doctor.RATING} picture={doctor.IMAGE}
+            />
+          <CardContent clinicName={doctor.CLINIC_NAME} address={doctor.ADDRESS} district={doctor.DISTRICT} contact={doctor.PHONE}/>
+      </Card>
+    );
   }
   showSearchResults() {
     return (
       <div>
-      <Card>
-          <Head name="Dr.V.P.Gangadharan" speciality="Oncologist" rating="4" picture="http://bestdoctorz.com:8080/api/getsmallphoto/4.jpg"/>
-          <CardContent/>
-      </Card>
-      <Card>
-          <Head name="Dr.V.P.Gangadharan" speciality="Oncologist" rating="4" picture="http://bestdoctorz.com:8080/api/getsmallphoto/4.jpg"/>
-          <CardContent/>
-      </Card>
-      <Card>
-          <Head name="Dr.V.P.Gangadharan" speciality="Oncologist" rating="4" picture="http://bestdoctorz.com:8080/api/getsmallphoto/4.jpg"/>
-          <CardContent/>
-      </Card>
-      <Card>
-          <Head name="Dr.V.P.Gangadharan" speciality="Oncologist" rating="4" picture="http://bestdoctorz.com:8080/api/getsmallphoto/4.jpg"/>
-          <CardContent/>
-      </Card>
-      <Card>
-          <Head name="Dr.V.P.Gangadharan" speciality="Oncologist" rating="4" picture="http://bestdoctorz.com:8080/api/getsmallphoto/4.jpg"/>
-          <CardContent/>
-      </Card>
-      <Card>
-          <Head name="Dr.V.P.Gangadharan" speciality="Oncologist" rating="4" picture="http://bestdoctorz.com:8080/api/getsmallphoto/4.jpg"/>
-          <CardContent/>
-      </Card>
+        {
+          this.props.doctors && this.props.doctors.map((doctor, key) => {
+            return this.showCard(doctor, key);
+          })
+        }
       </div>
     );
   }
   render () {
+    console.log("{{{{{}}}}}",this.props);
     return (
         <div className={searchStyle.searchBox}>
           <div className={searchStyle.searchArea}>
@@ -66,4 +60,8 @@ class Search extends Component {
   }
 }
 
-export default Search;
+const SearchConnect = connect(
+  mapStateToProps
+)(Search)
+
+export default SearchConnect;

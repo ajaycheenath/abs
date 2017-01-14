@@ -4,7 +4,7 @@ class ProfilePicture extends Component {
   render() {
     return (
         <div className={cardStyle.profilePicture}>
-          <img src={this.props.picture} className={cardStyle.profilePicture} onclick="showImage.show(&quot;http://bestdoctorz.com:8080/api/getphoto/72722.1480329416434clinic1.jpg&quot;);"/>
+          {this.props.picture && <img src={this.props.picture} className={cardStyle.profilePicture}/>}
         </div>
     );
   }
