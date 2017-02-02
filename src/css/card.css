@@ -30,6 +30,7 @@
   width: 100px;
   display: table-row;
   clear: both;
+  white-space: nowrap
 }
 .doctorDetails{
   width: 70%;
@@ -53,6 +54,11 @@
   font-weight: bold;
   overflow: hidden;
   display: table-row;
+}
+.doctorName:hover {
+  text-decoration: underline;
+  color: #4286f4;
+  cursor: pointer;
 }
 .speciality{
   color: brown;

@@ -8,11 +8,19 @@ import store from "./store";
 
 
 class App extends Component {
+  componentWillMount () {
+    this.setState({showSearch: false});
+  }
+
+  showSearchDrawer = () => {
+    this.setState({showSearch: true});
+  }
+
   render() {
     return (
         <div>
-          <Menu />
-          <MainContent />
+          <Menu showSearchDrawer={this.showSearchDrawer}/>
+          <MainContent showSearch={this.state.showSearch}/>
         </div>
     );
   }

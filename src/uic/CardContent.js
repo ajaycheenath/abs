@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import cardStyle from "../css/card.css";
 class CardContent extends Component {
+  displayData = (_data) => {
+    if(_data && _data != "null" && _data != "NA") {
+      return (
+        <div className={cardStyle.address}>{_data}</div>
+      );
+    }
+  }
   render() {
     const {clinicName, address, contact, district, state} = this.props;
     return (
         <div className={cardStyle.content}>
           <div className="doctorDetails">
-            <div className={cardStyle.address} title="Clinic Name">{clinicName}</div>
-            <div className={cardStyle.address} title="Address">{address}</div>
-            <div className={cardStyle.address}>{district}</div>
-            <div className={cardStyle.address}>{state}</div>
-            <div id="contactDiv" className={cardStyle.address} title="Phone Number">{contact}</div>
+            {this.displayData(clinicName)}
+            {this.displayData(address)}
+            {this.displayData(district)}
+            {this.displayData(state)}
+            {this.displayData(contact)}
             </div>
         </div>
     );

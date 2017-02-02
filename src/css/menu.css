@@ -6,11 +6,25 @@
   right: 0;
   color: #ffffff;
 }
+.searchIcon {
+    width: 30px;
+    height: 30px;
+    padding: 11px;
+    background-color: #cc0066;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    z-index: 120;
+    bottom: 0;
+    position: fixed;
+    right: 7px;
+}
 @media only screen and (max-width: 640px) {
   .menu {
       display: none;
       width: 100%;
-      z-index: 100;
+      z-index: 1;
       position: fixed;
       float: left;
       left: 0;
@@ -22,13 +36,15 @@
   display: inline-block;
 }
 .item {
-  font-size: 15px;
+  font-size: 14px;
   padding: 10px;
   display: block;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
 }
 .item:hover {
-  color: yellow;
   cursor: pointer;
+  border-bottom: 5px solid #4D949C;
 }
 @media only screen and (max-width: 640px) {
    .item {

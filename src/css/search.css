@@ -84,6 +84,9 @@
   }
 }
 @media only screen and (min-width: 748px) {
+  .searchBox {
+    width: 100%;
+  }
   .searchText {
     width: 438px;
     margin-left: 4px;

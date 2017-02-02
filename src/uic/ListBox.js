@@ -4,11 +4,11 @@ class ListBox extends Component {
   render() {
     return (
         <div className="floatLeft">
-          <div className={uicStyle.label}>{this.props.label}</div>
           <select onChange={this.props.onChange} className={uicStyle.listBox}>
-          {this.props.list.map((item, index) => {
+            <option value="">{this.props.label}</option>
+          {this.props.list && this.props.list.map((item, index) => {
               return (
-                <option value={item.value} key={index}>{item.name}</option>
+                <option value={item} key={index}>{item}</option>
               );
           })}
           </select>

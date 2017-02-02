@@ -55,3 +55,8 @@
   background-color: #efefef;
   text-align: right;
 }
+@media only screen and (max-width: 640px) {
+  .drawer {
+      width: 350px;
+  }
+}

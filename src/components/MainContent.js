@@ -14,8 +14,8 @@ class MainContent extends Component {
   render() {
     return (
         <div className={appStyle.container}>
-          <Search/>
-          
+          <Search showSearch={this.props.showSearch}/>
+
         </div>
     );
   }

@@ -6,18 +6,15 @@ class Card extends Component {
     this.setState({show: true});
   }
   onClose  = () =>{
-    this.setState({show: false});
+    this.props.showDrawer(false);
   }
   render() {
-    if(!this.state.show) {
-      return false;
-    }
     return (
         <div>
           <div className={drawerStyle.grayOut}>
           </div>
           <div className={drawerStyle.drawer}>
-            <Icon styleClass={drawerStyle.close} name="circle-x" onClick={this.handleSearch} onClick={this.onClose}/>
+            <Icon styleClass={drawerStyle.close} name="circle-x"  onClick={this.onClose}/>
             {this.props.children}
           </div>
         </div>
