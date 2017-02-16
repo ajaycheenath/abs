@@ -3,9 +3,28 @@
   min-width: 300px;
   margin: 2px;
   float: left;
-  box-shadow: 5px 3px 2px 0px #e1e1e1;
   background: #ffffff;
-  color: #8d8d8e;
+  float: left;
+}
+.comment {
+  float: left;
+  width: calc(100% - 20px);
+  font-family: "Palatino Linotype", Georgia, "Book Antiqua", Palatino, serif;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  border-left: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  border-right: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+  padding: 10px;
+}
+.heading {
+    color: brown;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 0;
+    float: left;
+    width: 100%;
 }
 .head {
   min-height: 75px;
@@ -37,12 +56,11 @@
   display: table;
 }
 .content {
-  height: 150px;
+  float: left;
+  width: calc(100% - 26px);
   position: relative;
   border-top: 0;
-  border-left: 1px solid #e3e3e3;
-  border-bottom: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   padding: 12px;
   background-color: #fff;
 }
@@ -83,6 +101,27 @@
   float: left;
   clear: both;
   display: table-row;
+}
+.extra {
+  padding: 5px;
+  border-bottom: 1px dotted #e1e1e1;
+}
+.extraName {
+  color: brown;
+  float: left;
+  width: 100%;
+  display: table-row;
+  clear: both;
+  white-space: nowrap
+}
+.map{
+  width: 100%;
+  height: 100%;
+  border: 1px soid #e1e1e1;
+}
+.noComment {
+  font-size: 12px;
+  float: left;
 }
 @media only screen and (min-width: 748px) {
   .card {

@@ -5,6 +5,7 @@ import menuStyle from "../css/menu.css";
 import appStyle from "../css/app.css";
 import { connect } from "react-redux";
 import { showSearchDrawer } from "../actions/doctorActions";
+import { browserHistory } from 'react-router';
 function mapStateToProps(state) {
   console.log(">?>>", state.doctorsearch.showSearch);
   return {showSearch: state.doctorsearch.showSearch};
@@ -18,6 +19,7 @@ class Menu extends Component {
   }
   handleSearch =()=> {
     this.props.dispatch(showSearchDrawer(true));
+    browserHistory.push('/home');
     this.setState({show: false});
   }
   render() {
@@ -30,10 +32,11 @@ class Menu extends Component {
               <Icon styleClass={menuStyle.icon} name="menu" onClick={this.handleClick}/>
             </div>
             <div className={this.state.show ? (menuStyle.menu + " " +menuStyle.showMenu) : (menuStyle.menu +" " +menuStyle.hideMenu+" "+appStyle.slide) }>
-              <MenuItem name="HOME" onClick={() => {window.location.href="home"}}/>
+              <MenuItem name="HOME" onClick={() => {browserHistory.push('/home');}}/>
               <MenuItem name="FIND DOCTORS" onClick={this.handleSearch}/>
               <MenuItem name="ADD DOCTOR" onClick={() => {window.location.href="recommenddoctor"}}/>
               <MenuItem name="CLINICS" onClick={() => {window.location.href="clinics"}}/>
+              <MenuItem name="LOGIN" onClick={() => {browserHistory.push('/login');}}/>
             </div>
         </div>
     );

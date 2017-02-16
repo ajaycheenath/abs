@@ -5,6 +5,7 @@
   top: 0;
   right: 0;
   color: #ffffff;
+  z-index: 2;
 }
 .searchIcon {
     width: 30px;
