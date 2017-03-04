@@ -24,7 +24,7 @@
   "scripts": {
     "test": "",
     "start": "npm install;node server",
-    "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint .",
     "jscs": "jscs .",
     "build-css": "node-sass  --include-path scss src/scss/main.scss   src/css/main.css",

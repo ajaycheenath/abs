@@ -31,9 +31,9 @@ class Menu extends Component {
             </div>
             <div className={this.state.show ? (menuStyle.menu + " " +menuStyle.showMenu) : (menuStyle.menu +" " +menuStyle.hideMenu+" "+appStyle.slide) }>
               <MenuItem name="HOME" onClick={() => {window.location.href="home"}}/>
-              <MenuItem name="FIND DOCTORS" onClick={this.handleSearch}/>
-              <MenuItem name="ADD DOCTOR" onClick={() => {window.location.href="recommenddoctor"}}/>
-              <MenuItem name="CLINICS" onClick={() => {window.location.href="clinics"}}/>
+              <MenuItem name="FIND DOCTORS" onClick={this.handleSearch} />
+              <MenuItem name="ADD DOCTOR" onClick={() => {window.location.href="recommenddoctor"}} id="guideme-register"/>
+              <MenuItem name="CLINICS" onClick={() => {window.location.href="clinics"}} id="guideme-clinic"/>
             </div>
         </div>
     );

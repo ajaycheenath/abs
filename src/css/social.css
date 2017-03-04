@@ -1,0 +1,42 @@
+.social {
+    width: 45px;
+    position: fixed;
+    height: 132px;
+    padding: 0px;
+    background: #cccccc;
+    z-index: 1;
+    bottom: 45%;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5px 3px 2px 0px #e1e1e1;
+}
+
+@media only screen and (max-width: 748px) {
+  .social {
+      display: none;
+  }
+}
+
+
+.social .icon {
+    float: left;
+    height: 32px;
+    width: 32px;
+    margin: 4px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+}
+.social .icon:hover {
+    border: 2px solid #333;
+}
+
+.facebook {
+    background-image: url(http://www.bestdoctorz.com/images/32-facebook.png);
+}
+.linkedin {
+    background-image: url(http://www.bestdoctorz.com/images/32-linkedin.png);
+}
+.twitter {
+    background-image: url(http://www.bestdoctorz.com/images/32-twitter.png);
+}

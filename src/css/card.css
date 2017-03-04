@@ -3,9 +3,12 @@
   min-width: 300px;
   margin: 2px;
   float: left;
-  box-shadow: 5px 3px 2px 0px #e1e1e1;
   background: #ffffff;
   color: #8d8d8e;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 5px 3px 2px 0px #e1e1e1;
 }
 .head {
   min-height: 75px;
