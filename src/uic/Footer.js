@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import footerStle from "../css/footer.css";
+import drawerStyle from "../css/drawer.css";
 class Footer extends Component {
   render() {
     return (
-        <div className={footerStle.footer}>
-          <div>&copy;all rights reserved</div>
+        <div className={drawerStyle.footer}>
+          {this.props.children}
         </div>
     );
   }

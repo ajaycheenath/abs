@@ -1,0 +1,22 @@
+.star {
+    padding: 3px;
+    width: 14px;
+    height: 14px;
+    float: left;
+    fill: #E1E1E1;
+}
+.rating1 {
+    fill: red;
+}
+.rating2 {
+    fill: #F69;
+}
+.rating3 {
+    fill: #A3297A;
+}
+.rating4 {
+    fill: #C2E066;
+}
+.rating5 {
+    fill: #66C285;
+}

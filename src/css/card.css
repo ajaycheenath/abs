@@ -1,0 +1,94 @@
+.card {
+  width: calc(100% - 5px);
+  min-width: 300px;
+  margin: 2px;
+  float: left;
+  background: #ffffff;
+  color: #8d8d8e;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 5px 3px 2px 0px #e1e1e1;
+}
+.head {
+  min-height: 75px;
+  padding: 12px;
+  position: relative;
+  background: #f9f9f9;
+  border: 1px solid #e3e3e3;
+}
+.profilePicture {
+  width: 70px;
+  height: 74px;
+  background-color: #e1e1e1;
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 11px;
+  border-radius: 50%;
+}
+.speciality{
+  color: brown;
+  float: left;
+  width: 100px;
+  display: table-row;
+  clear: both;
+  white-space: nowrap
+}
+.doctorDetails{
+  width: 70%;
+  display: table;
+}
+.content {
+  height: 150px;
+  position: relative;
+  border-top: 0;
+  border-left: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  padding: 12px;
+  background-color: #fff;
+}
+.doctorName{
+  padding: 0;
+  margin: 0;
+  color: #00000a;
+  height: 25px;
+  font-weight: bold;
+  overflow: hidden;
+  display: table-row;
+}
+.doctorName:hover {
+  text-decoration: underline;
+  color: #4286f4;
+  cursor: pointer;
+}
+.speciality{
+  color: brown;
+  float: left;
+  width: 100px;
+  display: table-row;
+  clear: both;
+}
+.control {
+  padding: 5px;
+  float: left;
+  text-align: center;
+  color: #83b241;
+}
+.address {
+  width: 98%;
+  float: left;
+  padding-top: 5px;
+}
+.rating {
+  width: 200px;
+  float: left;
+  clear: both;
+  display: table-row;
+}
+@media only screen and (min-width: 748px) {
+  .card {
+    margin: 5px;
+  }
+}

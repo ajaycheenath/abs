@@ -1,0 +1,12 @@
+body {
+  margin:0;
+  background: #f2f2f2;
+}
+
+.container {
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  max-width: 600px;
+}

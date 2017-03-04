@@ -7,10 +7,11 @@ class Icon extends Component {
   }
   render() {
     return (
-      <div onClick={this.handleClick}>
+      <div onClick={this.handleClick} className="floatLeft">
         <svg className={this.props.styleClass}>
           <use xlinkHref={"./sprite.svg#"+this.props.name}></use>
         </svg>
+        {this.props.text}
       </div>
     );
   }

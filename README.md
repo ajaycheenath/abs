@@ -1,8 +1,3 @@
-[![Build Status](https://travis-ci.org/ajaycheenath/abs.svg?branch=develop)](https://travis-ci.org/ajaycheenath/abs)
-
-
-## bestdoctorz.com
-The idea came in my mind when my friend was diagnosed with terminal cancer. I spent days scanning through dozens of doctor listing websites, but couldn't spot any website which can suggest a good oncologist doctor. Even today, searching for the best specialized doctors on major search engines doesn’t provide reliable answers. This was when I decided to start work on an application that can help patients to find best doctors.
 
 #### Version 0.1 (2014)
 
@@ -155,3 +150,4 @@ TODO
 ### Production deployment
 
 * NODE_ENV=production PORT=8080 npm start
+

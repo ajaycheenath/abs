@@ -1,0 +1,84 @@
+.guideTop, .guideLeft  {
+		position: fixed;
+    background: #88b7d5;
+    border: 2px solid #c2e1f5;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 80px;
+    max-height: 200px;
+    z-index: 1500;
+		color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+		padding: 10px;
+}
+
+.guideTop:after, .guideTop:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.guideTop:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 11px;
+	margin-left: -11px;
+}
+.guideTop:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 13px;
+	margin-left: -13px;
+}
+
+.guideLeft:after, .guideLeft:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.guideLeft:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #88b7d5;
+	border-width: 11px;
+	margin-top: -11px;
+}
+.guideLeft:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #c2e1f5;
+	border-width: 13px;
+	margin-top: -13px;
+}
+
+.content {
+  float: left;
+  width: 100%;
+  min-height: 60px;
+}
+.skip {
+  float: left;
+}
+.next {
+    float: right;
+}
+.skip:hover {
+ color: #333;
+ cursor: pointer;
+}
+.next:hover {
+  color: #333;
+  cursor: pointer;
+}
