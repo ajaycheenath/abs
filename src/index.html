@@ -203,7 +203,7 @@
               setTimeout(showNotifications.bind(this, start+MAX_SIZE), 10000);
              }
            };
-           xhttp.open("GET", window.global.getGobalVariable("baseApiUrl")+"/"+start+"/"+(start+MAX_SIZE), true);
+           xhttp.open("GET", window.global.getGobalVariable("baseApiUrl")+"/notifications/"+start+"/"+(start+MAX_SIZE), true);
            xhttp.send();
         }
         //Google analytics
