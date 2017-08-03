@@ -77,7 +77,7 @@ Drawback - It does the job, but when you write your own framework, if you don't 
 
 Have a look at bestdoctorz.com custom JS file [here](http://bestdoctorz.com/js/util.mini.js)  
 
-#### Version 0.6 - React JS, Relay and GraphQL
+#### Version 0.6 - React JS, Redux
 
 ###### Why React JS?
 
@@ -85,15 +85,11 @@ TODO - React JS can solve most the problems mentioned above. It is also "Declara
 
 https://facebook.github.io/react/
 
-###### Why Relay?
-TODO - Relay - Is an awesome UI cache layer for reactjs. Does help in making graphql backend calls, cache data on the UI layer and improve performance by not making backend call if the required data is already available on UI cache layer.   
+###### Why Redux?
+TODO - When you have slightly complex requirements, the state management in reactjs projects go for a toss. It become callback hell for back and forth state management. Redux is an awesome library to handle your state requirements globally without messing your reactjs code.   
 
-https://facebook.github.io/relay/
+http://redux.js.org/
 
-###### Why GraphQL?
-TODO - A single end point which can serve different clients (Web, Mobile, App etc), as per their data requirement. Provide exactly what is required - Nothing less & Nothing more.
-
-https://github.com/facebook/graphql
 
 Drawback - Wow ReactJS reduced the page loading time almost half thats around 3.5 seconds. Also development & maintaince became more fun and super easy. But that still not meeting our < 2seonds initial page load time target? What could be wrong?
 
@@ -128,8 +124,7 @@ TODO
 
 * NodeJS (Express) server
 * ReactJS (UI rendering)
-* Relay (Data Layer)
-* GraphQL (backend single endpoint)
+* Redux (Global State management library)
 * ~~bootstrap~~
 * ~~Jquery~~
 * Babel (ES6 to ES5 transpilar)
